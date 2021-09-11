@@ -9,10 +9,10 @@ import { LessonModule } from './lesson/lesson.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mongodb',
-      url: 'mongodb://localhost:27017/nest',
+      url: 'mongodb://localhost:27017/school',
       synchronize: true,
       useUnifiedTopology: true,
-      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      entities: [__dirname + '/**/*.entity.js'],
     }),
     GraphQLModule.forRoot({
       autoSchemaFile: true,
